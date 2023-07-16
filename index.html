@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>findFactorial</title>
+	<style>
+		*{
+			text-align: center;
+			margin: 20px auto;
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		}
+		.display{
+			visibility: visible;
+		}
+		.result_display{
+			visibility: hidden;
+		}
+		.hidden{
+			visibility: hidden;
+		}
+		.visible{
+			visibility: visible;
+		}
+		input.text{
+			position: absolute;
+			font-size: 20px;
+			outline: none;
+			border: none;
+			margin:10px auto;
+			width: 350px;
+			left: -175px;
+		}
+		.inputtext{
+			position: relative;
+			padding: 20px;
+			left: 50%;
+		}
+		input.btn{
+			padding: 8px 20px;
+			outline: none;
+			border: none;
+			background-color: white;
+			box-shadow: 2px 2px 2px gray;
+			border-radius: 20px;
+		}
+		input.btn:active{
+			box-shadow: inset 2px 2px 2px gray;
+			color: gray;
+		}
+	</style>
+</head>
+<body>
+	
+<div class="container">
+	<h1>Find Factorial Of Number</h1>
+	<form action="#">
+		<div class="inputtext">
+			<input type="number" class="display text" placeholder="Input your Number">
+			<input class="result_display text" type="text">
+		</div>
+		<input type="submit" class="btn" Value="See Result" onclick="findFactorial(display.value); hideInputField()">
+		<input type="reset" class="btn" value="reset" onclick="showInputField()">
+	</form>
+</div>
+	<script src="./app.js"></script>
+</body>
+</html>
